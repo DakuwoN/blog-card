@@ -1,0 +1,131 @@
+/* Put any custom CSS styles here.  */
+/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: linear-gradient(147.52deg, #f9fafb 8.89%, #d2d6db 100.48%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --purple: #4338CA;
+  --green: #15803D;
+  --black: #171717;
+  --white: #FFFFFF;
+  --dark-grey: #525252;
+  --light-green: #BBF7D0;
+  --extra-light-green: #F0FDF4;
+  
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  /* height: 100vh; */
+}
+
+.card {
+  margin-top: 12.5rem;
+  width: 21.25rem; 
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0);
+}
+
+.card__image {
+  min-width: 21.25rem;  
+  height: 18rem;
+  display: flex;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3% 3% 0 0;
+}
+
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  height: 13.5rem;
+  border-radius: 0 0 3% 3%;
+  padding: 24px 16px;
+  gap: 16px;
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+}
+
+.card__bottom__info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card--category-tag {
+  color: var(--green);
+  background-color: var(--extra-light-green);
+  border-radius: 9999px;
+  
+  border: solid 1px var(--light-green);
+  padding: 2px 8px;
+}
+
+
+.card--cta {
+  color: var(--purple);
+  font-size: large;
+  display: flex;
+  gap: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.card--description {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-grey);
+  font-weight: medium;
+}
+
+.card--title {
+  font-weight: 600;
+  color: var(--black);
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.card--arrow {
+  font-size: large;
+}
+
+
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
